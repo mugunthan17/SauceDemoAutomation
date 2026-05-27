@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SauceDemo Automation Suite" parallel="false" allow-return-values="true" preserve-order="true">
+    
+    <!-- Register Custom Listeners -->
+    <listeners>
+        <listener class-name="com.saucedemo.automation.utils.TestDataReportListener"/>
+        <listener class-name="com.saucedemo.automation.utils.TestLogger"/>
+    </listeners>
+    
+    <!-- Suite Level Global Parameters -->
+    <parameter name="browser" value="chrome"/>
+    <parameter name="baseUrl" value="https://www.saucedemo.com"/>
+    <parameter name="logName" value="SAUCEDEMO_LOGS"/>
+    
+    <!--<test name="Login_AllTests">
+        <parameter name="testData" value="./src/main/resources/testdata/LoginData.xlsx:LoginTests"/>
+        <parameter name="testDataSets" value="ALL"/>
+        <parameter name="loggerFileName" value="SauceDemoLoginTest.log"/>
+        <classes>
+            <class name="com.saucedemo.automation.tests.LoginTests"/>
+        </classes>
+    </test>
+    
+   <test name="Cart_SingleTest">
+    	<parameter name="testData" value="./src/main/resources/testdata/CartData.xlsx:CartTests"/>
+    	<parameter name="testDataSets" value="ALL"/>
+    	<parameter name="loggerFileName" value="SauceDemoCartTest.log"/>
+    	<classes>
+        	<class name="com.saucedemo.automation.tests.CartTests"/>
+    	</classes>
+    </test>-->
+    
+   <test name="Checkout_AllTests">
+    	<parameter name="testData" value="./src/main/resources/testdata/CheckoutData.xlsx:CheckoutTests"/>
+    	<parameter name="testDataSets" value="ALL"/>
+    	<parameter name="loggerFileName" value="SauceDemoCheckoutTest.log"/>
+    	<classes>
+        	<class name="com.saucedemo.automation.tests.CheckoutTests"/>
+    	</classes>
+	</test>
+	
+	<test name="EndToEnd_AllTests">
+    	<parameter name="testData" value="./src/main/resources/testdata/EndToEndData.xlsx:EndToEndTests"/>
+    	<parameter name="testDataSets" value="ALL"/>
+    	<parameter name="loggerFileName" value="SauceDemoEndToEndTest.log"/>
+    	<classes>
+        	<class name="com.saucedemo.automation.tests.EndToEndTests"/>
+    	</classes>
+	</test> 
+    
+</suite>

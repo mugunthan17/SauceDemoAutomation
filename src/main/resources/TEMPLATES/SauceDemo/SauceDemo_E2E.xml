@@ -1,0 +1,98 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="SauceDemo_EndToEnd_Tests" parallel="false" allow-return-values="true" preserve-order="true">
+
+	<!-- ============================================ -->
+	<!-- END-TO-END TEST SUITE CONFIGURATION          -->
+	<!-- ============================================ -->
+	
+	<!-- Global Parameters -->
+	<parameter name="configurationFilesDirectory" value="./src/main/resources/config" />
+	<parameter name="logName" value="E2E_TESTS_LOGS"/> 
+	<parameter name="baseUrl" value="https://www.saucedemo.com/" />
+	<parameter name="browser" value="chrome" />
+	<parameter name="captureScreenshot" value="true" />
+	
+	<!-- Test Data Reporting -->
+	<listeners>
+		<listener class-name="com.saucedemo.automation.utils.TestDataReportListener"/>
+	</listeners>
+
+	<!-- ============================================ -->
+	<!-- END-TO-END TEST SCENARIOS                    -->
+	<!-- Complete workflows from Login to Checkout    -->
+	<!-- User can configure testDataSets parameter    -->
+	<!-- Options: TC1, TC2, TC3, ALL                 -->
+	<!-- ============================================ -->
+	
+	<!-- Test: Complete E2E Flow - Single Product -->
+	<!-- Login → Add Product → Checkout → Complete Order -->
+	<test name="E2E_CompletePurchaseFlow_SingleProduct"> 
+		<parameter name="testCode" value="./src/main/resources/testdata/EndToEndData.xlsx:TEST_CODE" />     
+		<parameter name="testData" value="./src/main/resources/testdata/EndToEndData.xlsx:EndToEndTests"/> 
+		<parameter name="testDataSets" value="TC1" /> 
+		<classes>
+			<class name="com.saucedemo.automation.tests.EndToEndTests">
+				<methods>					
+					<include name="testCompleteEndToEndFlow" />					
+				</methods>
+			</class>
+		</classes>   
+	</test>
+	
+	<!-- Test: Complete E2E Flow - Multiple Products -->
+	<!-- Login → Add Multiple Products → Checkout → Complete Order -->
+	<test name="E2E_CompletePurchaseFlow_MultipleProducts"> 
+		<parameter name="testCode" value="./src/main/resources/testdata/EndToEndData.xlsx:TEST_CODE" />     
+		<parameter name="testData" value="./src/main/resources/testdata/EndToEndData.xlsx:EndToEndTests"/> 
+		<parameter name="testDataSets" value="TC2" /> 
+		<classes>
+			<class name="com.saucedemo.automation.tests.EndToEndTests">
+				<methods>					
+					<include name="testE2EWithMultipleProducts" />					
+				</methods>
+			</class>
+		</classes>   
+	</test>
+	
+	<!-- Test: E2E Flow with Product Removal -->
+	<!-- Login → Add Products → Remove One → Checkout → Complete Order -->
+	<test name="E2E_FlowWithProductRemoval"> 
+		<parameter name="testCode" value="./src/main/resources/testdata/EndToEndData.xlsx:TEST_CODE" />     
+		<parameter name="testData" value="./src/main/resources/testdata/EndToEndData.xlsx:EndToEndTests"/> 
+		<parameter name="testDataSets" value="TC3" /> 
+		<classes>
+			<class name="com.saucedemo.automation.tests.EndToEndTests">
+				<methods>					
+					<include name="testE2EWithProductRemoval" />					
+				</methods>
+			</class>
+		</classes>   
+	</test>
+	
+	<!-- Test: E2E Flow - Different User -->
+	<!-- Verify E2E flow works with different user credentials -->
+	<test name="E2E_DifferentUser"> 
+		<parameter name="testCode" value="./src/main/resources/testdata/EndToEndData.xlsx:TEST_CODE" />     
+		<parameter name="testData" value="./src/main/resources/testdata/EndToEndData.xlsx:EndToEndTests"/> 
+		<parameter name="testDataSets" value="TC4" /> 
+		<classes>
+			<class name="com.saucedemo.automation.tests.EndToEndTests">
+				<methods>					
+					<include name="testCompleteEndToEndFlow" />					
+				</methods>
+			</class>
+		</classes>   
+	</test>
+	
+	<!-- Test: All E2E Tests (Data-Driven) -->
+	<!-- Execute all end-to-end test cases from Excel -->
+	<test name="E2E_AllTests"> 
+		<parameter name="testCode" value="./src/main/resources/testdata/EndToEndData.xlsx:TEST_CODE" />     
+		<parameter name="testData" value="./src/main/resources/testdata/EndToEndData.xlsx:EndToEndTests"/> 
+		<parameter name="testDataSets" value="ALL" /> 
+		<classes>
+			<class name="com.saucedemo.automation.tests.EndToEndTests"/>
+		</classes>   
+	</test>
+
+</suite>
