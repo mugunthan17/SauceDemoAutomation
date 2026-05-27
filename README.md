@@ -697,7 +697,3 @@ This framework aligns with the enterprise-grade **common-test** project structur
 - [Page Object Model Pattern](https://www.selenium.dev/documentation/test_practices/encouraged/page_object_models/)
 
 ---
-
-**Framework Version:** 1.0.0-SNAPSHOT  
-**Last Updated:** December 2024  
-**Status:** ✅ Production Ready
