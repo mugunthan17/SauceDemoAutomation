@@ -1,6 +1,6 @@
 # SauceDemo Automation Framework
 
-**Enterprise-Grade Test Automation Framework for SauceDemo E-Commerce Application**
+**Test Automation Framework for SauceDemo E-Commerce Application**
 
 ---
 
