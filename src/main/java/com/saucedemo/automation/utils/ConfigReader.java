@@ -26,7 +26,7 @@ public class ConfigReader {
     }
 
     public String getBrowser() {
-        return properties.getProperty("browser", "chrome");
+        return System.getProperty("browser", properties.getProperty("browser", "chrome"));
     }
 
     public String getBaseUrl() {

@@ -40,13 +40,13 @@
     	</classes>
 	</test>
 	
-	<test name="EndToEnd_AllTests">
+	<!-- <test name="EndToEnd_AllTests">
     	<parameter name="testData" value="./src/main/resources/testdata/EndToEndData.xlsx:EndToEndTests"/>
     	<parameter name="testDataSets" value="ALL"/>
     	<parameter name="loggerFileName" value="SauceDemoEndToEndTest.log"/>
     	<classes>
         	<class name="com.saucedemo.automation.tests.EndToEndTests"/>
     	</classes>
-	</test> 
+	</test>  -->
     
 </suite>

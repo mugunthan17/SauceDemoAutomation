@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="128.834" tests="8" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="19"/>
+    <property name="webdriver.chrome.driver" value="D:\SauceDemo &amp; FakeStoreAPI\SauceDemoAutomation\src\main\resources\drivers\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\SauceDemo &amp; FakeStoreAPI\SauceDemoAutomation\target\test-classes;D:\SauceDemo &amp; FakeStoreAPI\SauceDemoAutomation\target\classes;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-api\4.21.0\selenium-api-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.21.0\selenium-chrome-driver-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.21.0\selenium-chromium-driver-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-json\4.21.0\selenium-json-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.21.0\selenium-manager-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.21.0\selenium-devtools-v85-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.21.0\selenium-edge-driver-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.21.0\selenium-firefox-driver-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-http\4.21.0\selenium-http-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.21.0\selenium-ie-driver-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.21.0\selenium-remote-driver-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\google\guava\guava\33.2.0-jre\guava-33.2.0-jre.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\opentelemetry\opentelemetry-api\1.38.0\opentelemetry-api-1.38.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\opentelemetry\opentelemetry-context\1.38.0\opentelemetry-context-1.38.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.38.0\opentelemetry-exporter-logging-1.38.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.38.0\opentelemetry-sdk-common-1.38.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.38.0\opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.38.0\opentelemetry-sdk-extension-autoconfigure-1.38.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.38.0-alpha\opentelemetry-api-incubator-1.38.0-alpha.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.38.0\opentelemetry-sdk-trace-1.38.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.38.0\opentelemetry-sdk-1.38.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.38.0\opentelemetry-sdk-metrics-1.38.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.38.0\opentelemetry-sdk-logs-1.38.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-os\4.21.0\selenium-os-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.21.0\selenium-safari-driver-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-support\4.21.0\selenium-support-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\testng\testng\7.3.0\testng-7.3.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\ant\ant\1.10.3\ant-1.10.3.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\ant\ant-launcher\1.10.3\ant-launcher-1.10.3.jar;C:\Users\MUGUNTHAN N\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\google\inject\guice\4.2.2\guice-4.2.2-no_aop.jar;C:\Users\MUGUNTHAN N\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\MUGUNTHAN N\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\github\bonigarcia\webdrivermanager\5.8.0\webdrivermanager-5.8.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\MUGUNTHAN N\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\poi\poi\5.2.5\poi-5.2.5.jar;C:\Users\MUGUNTHAN N\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\poi\poi-ooxml\5.2.5\poi-ooxml-5.2.5.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.5\poi-ooxml-lite-5.2.5.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\commons\commons-compress\1.24.0\commons-compress-1.24.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\MUGUNTHAN N\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\MUGUNTHAN N\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\MUGUNTHAN N\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="19"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-19\bin"/>
+    <property name="sun.java.command" value="C:\Users\MUGUNTHAN N\AppData\Local\Temp\surefire7629608873169578982\surefirebooter-20260624120409135_3.jar C:\Users\MUGUNTHAN N\AppData\Local\Temp\surefire7629608873169578982 2026-06-24T12-04-08_765-jvmRun1 surefire-20260624120409135_1tmp surefire_0-20260624120409135_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\SauceDemo &amp; FakeStoreAPI\SauceDemoAutomation\target\test-classes;D:\SauceDemo &amp; FakeStoreAPI\SauceDemoAutomation\target\classes;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-api\4.21.0\selenium-api-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.21.0\selenium-chrome-driver-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.21.0\selenium-chromium-driver-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-json\4.21.0\selenium-json-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.21.0\selenium-manager-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.21.0\selenium-devtools-v85-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.21.0\selenium-edge-driver-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.21.0\selenium-firefox-driver-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-http\4.21.0\selenium-http-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.21.0\selenium-ie-driver-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.21.0\selenium-remote-driver-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\google\guava\guava\33.2.0-jre\guava-33.2.0-jre.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\opentelemetry\opentelemetry-api\1.38.0\opentelemetry-api-1.38.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\opentelemetry\opentelemetry-context\1.38.0\opentelemetry-context-1.38.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.38.0\opentelemetry-exporter-logging-1.38.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.38.0\opentelemetry-sdk-common-1.38.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.38.0\opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.38.0\opentelemetry-sdk-extension-autoconfigure-1.38.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.38.0-alpha\opentelemetry-api-incubator-1.38.0-alpha.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.38.0\opentelemetry-sdk-trace-1.38.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.38.0\opentelemetry-sdk-1.38.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.38.0\opentelemetry-sdk-metrics-1.38.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.38.0\opentelemetry-sdk-logs-1.38.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-os\4.21.0\selenium-os-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.21.0\selenium-safari-driver-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\seleniumhq\selenium\selenium-support\4.21.0\selenium-support-4.21.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\testng\testng\7.3.0\testng-7.3.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\ant\ant\1.10.3\ant-1.10.3.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\ant\ant-launcher\1.10.3\ant-launcher-1.10.3.jar;C:\Users\MUGUNTHAN N\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\google\inject\guice\4.2.2\guice-4.2.2-no_aop.jar;C:\Users\MUGUNTHAN N\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\MUGUNTHAN N\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\github\bonigarcia\webdrivermanager\5.8.0\webdrivermanager-5.8.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\MUGUNTHAN N\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\poi\poi\5.2.5\poi-5.2.5.jar;C:\Users\MUGUNTHAN N\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\poi\poi-ooxml\5.2.5\poi-ooxml-5.2.5.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.5\poi-ooxml-lite-5.2.5.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\apache\commons\commons-compress\1.24.0\commons-compress-1.24.0.jar;C:\Users\MUGUNTHAN N\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\MUGUNTHAN N\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\MUGUNTHAN N\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\MUGUNTHAN N\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\MUGUNTHAN N\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\MUGUNTHAN N\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\MUGUNTHAN N"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-19"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\SauceDemo &amp; FakeStoreAPI\SauceDemoAutomation"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\MUGUNTHAN N\AppData\Local\Temp\surefire7629608873169578982\surefirebooter-20260624120409135_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="19.0.2+7-44"/>
+    <property name="user.name" value="MUGUNTHAN N"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="browser" value="chrome-headless"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\MUGUNTHAN N\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\MUGUNT~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="19.0.2"/>
+    <property name="user.dir" value="D:\SauceDemo &amp; FakeStoreAPI\SauceDemoAutomation"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-19\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\MUGUNTHAN N\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\MUGUNTHAN N\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk-19\bin;C:\Program Files\MongoDB\Server\7.0\bin;C:\Program Files\mongosh-1.10.6-win32-x64\bin;C:\Program Files\HP\HP One Agent;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\MUGUNTHAN N\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\MUGUNTHAN N\AppData\Local\Programs\Python\Python311\;C:\Users\MUGUNTHAN N\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\MUGUNTHAN N\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk-19\bin;C:\Program Files\heroku\bin;E:\PYCHARM\PyCharm 2023.2\bin;;C:\apache-maven-3.9.9\bin;C:\Users\MUGUNTHAN N\AppData\Roaming\npm;C:\Users\MUGUNTHAN N\.dotnet\tools;c:\Users\MUGUNTHAN N\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="19.0.2+7-44"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="63.0"/>
+  </properties>
+  <testcase name="testCheckoutFunctionality[{ExpectedResult=SUCCESS, Description=Complete checkout with valid data, TestCase=TC1, Username=standard_user, FirstName=Mugunthan, ProductIndex=0, PostalCode=632007, LastName=N, ErrorMessage=, Password=secret_sauce}](1)" classname="com.saucedemo.automation.tests.CheckoutTests" time="2.836">
+    <system-out><![CDATA[<h2 style='color:#1e90ff;'>Test Suite: Checkout_AllTests</h2>
+2026-06-24 12:04:11.011 [main] INFO  c.s.automation.utils.TestLogger - Created test log file: src/logs/SauceDemoCheckoutTest.log
+2026-06-24 12:04:11.069 [main] INFO  c.s.automation.utils.DriverFactory - Using local ChromeDriver: D:\SauceDemo & FakeStoreAPI\SauceDemoAutomation\src\main\resources\drivers\chromedriver.exe
+2026-06-24 12:04:18.264 [main] INFO  c.s.automation.utils.BrowserUtil - Browser initialized: chrome-headless
+2026-06-24 12:04:19.768 [main] INFO  c.s.automation.utils.ExcelReader - Excel file loaded successfully: ./src/main/resources/testdata/CheckoutData.xlsx - Sheet: CheckoutTests
+2026-06-24 12:04:19.815 [main] INFO  c.s.automation.utils.ExcelReader - Read 8 data rows from sheet
+2026-06-24 12:04:19.815 [main] INFO  c.s.automation.utils.ExcelReader - Excel workbook closed
+2026-06-24 12:04:19.838 [main] INFO  c.s.automation.tests.CheckoutTests - ========== Setup for Test Case: TC1 ==========
+2026-06-24 12:04:20.671 [main] INFO  c.s.automation.utils.BrowserUtil - Navigated to: https://www.saucedemo.com/
+2026-06-24 12:04:20.671 [main] INFO  c.s.automation.tests.CheckoutTests - Step 1: Navigated to base URL
+2026-06-24 12:04:20.710 [main] INFO  c.s.automation.tests.LoginTests - Step 1: Entering username: standard_user
+2026-06-24 12:04:21.144 [main] INFO  c.s.automation.tests.LoginTests - Step 2: Entering password: ********
+2026-06-24 12:04:21.430 [main] INFO  c.s.automation.tests.LoginTests - Step 3: Clicking login button
+2026-06-24 12:04:22.037 [main] INFO  c.s.automation.tests.CheckoutTests - ✓ Login SUCCESSFUL - Inventory page displayed
+2026-06-24 12:04:22.183 [main] INFO  c.s.automation.pages.InventoryPage - Found 6 add-to-cart buttons on inventory page
+2026-06-24 12:04:22.194 [main] INFO  c.s.automation.pages.InventoryPage - Attempting to click button at index 0 with text: 'Add to cart'
+2026-06-24 12:04:22.936 [main] INFO  c.s.automation.pages.InventoryPage - Button text after click: 'Remove'
+2026-06-24 12:04:22.937 [main] INFO  c.s.automation.pages.InventoryPage - ✓ Product successfully added to cart (button changed to 'Remove')
+2026-06-24 12:04:22.937 [main] INFO  c.s.automation.tests.CheckoutTests - Step 2: Added product at index 0 to cart
+2026-06-24 12:04:23.162 [main] INFO  c.s.automation.tests.CheckoutTests - Step 3: Navigated to cart page
+2026-06-24 12:04:23.488 [main] INFO  c.s.automation.tests.CheckoutTests - Step 4: Clicked checkout button
+2026-06-24 12:04:23.494 [main] INFO  c.s.automation.tests.CheckoutTests - ✓ Setup completed - Ready for checkout test
+<div style='margin:5px 0; padding:5px; background-color:#f0f8ff; border-left:3px solid #1e90ff;'><b>Test Data:</b><br/><table border='1' cellpadding='3' cellspacing='0' style='border-collapse:collapse; font-size:13px;'><tr style='background-color:#1e90ff; color:white;'><th>Field</th><th>Value</th></tr><tr><td>ExpectedResult</td><td>SUCCESS</td></tr><tr><td>Description</td><td>Complete checkout with valid data</td></tr><tr><td>TestCase</td><td>TC1</td></tr><tr><td>Username</td><td>standard_user</td></tr><tr><td>FirstName</td><td>Mugunthan</td></tr><tr><td>ProductIndex</td><td>0</td></tr><tr><td>PostalCode</td><td>632007</td></tr><tr><td>LastName</td><td>N</td></tr><tr><td>ErrorMessage</td><td></td></tr><tr><td>Password</td><td>secret_sauce</td></tr></table></div>
+2026-06-24 12:04:23.504 [main] INFO  c.s.automation.tests.CheckoutTests - ========== Executing Test Case: TC1 ==========
+2026-06-24 12:04:23.505 [main] INFO  c.s.automation.tests.CheckoutTests - Description: Complete checkout with valid data
+2026-06-24 12:04:23.505 [main] INFO  c.s.automation.tests.CheckoutTests - Expected Result: SUCCESS
+2026-06-24 12:04:23.506 [main] INFO  c.s.automation.tests.CheckoutTests - Step 5: Entering checkout information
+2026-06-24 12:04:23.506 [main] INFO  c.s.automation.tests.CheckoutTests -   - First Name: Mugunthan
+2026-06-24 12:04:23.506 [main] INFO  c.s.automation.tests.CheckoutTests -   - Last Name: N
+2026-06-24 12:04:23.506 [main] INFO  c.s.automation.tests.CheckoutTests -   - Postal Code: 632007
+2026-06-24 12:04:25.436 [main] INFO  c.s.automation.tests.CheckoutTests - Step 6: Clicked continue button
+2026-06-24 12:04:25.438 [main] INFO  c.s.automation.tests.CheckoutTests - Step 7: Clicking finish to complete order
+2026-06-24 12:04:26.327 [main] INFO  c.s.automation.tests.CheckoutTests - Step 8: Verifying order completion
+2026-06-24 12:04:26.327 [main] INFO  c.s.automation.tests.CheckoutTests - ✓ Order completion verification PASSED
+2026-06-24 12:04:26.333 [main] INFO  c.s.automation.tests.CheckoutTests - ========== Test Case TC1 Completed ==========
+]]></system-out>
+    <system-err><![CDATA[Jun 24, 2026 12:04:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 149
+Jun 24, 2026 12:04:18 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 149.0.7827.115. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+]]></system-err>
+  </testcase>
+  <testcase name="testCheckoutFunctionality[{ExpectedResult=FAILURE, Description=Checkout without first name, TestCase=TC2, Username=standard_user, FirstName=, ProductIndex=0, PostalCode=632007, LastName=N, ErrorMessage=Error: First Name is required, Password=secret_sauce}](2)" classname="com.saucedemo.automation.tests.CheckoutTests" time="1.736">
+    <system-out><![CDATA[<div style='margin:5px 0; padding:5px; background-color:#28a74520; border-left:3px solid #28a745;'><b>Status: <span style='color:#28a745;'>PASSED</span></b> | Duration: 2837 ms</div>
+2026-06-24 12:04:26.404 [main] INFO  c.s.automation.utils.BrowserUtil - Navigated to: https://www.saucedemo.com/
+2026-06-24 12:04:37.271 [main] ERROR c.s.automation.tests.CheckoutTests - Error during logout: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: react-burger-menu-btn' (tried for 10 second(s) with 500 milliseconds interval)
+2026-06-24 12:04:37.271 [main] INFO  c.s.automation.tests.CheckoutTests - ========== Setup for Test Case: TC2 ==========
+2026-06-24 12:04:37.329 [main] INFO  c.s.automation.utils.BrowserUtil - Navigated to: https://www.saucedemo.com/
+2026-06-24 12:04:37.330 [main] INFO  c.s.automation.tests.CheckoutTests - Step 1: Navigated to base URL
+2026-06-24 12:04:37.333 [main] INFO  c.s.automation.tests.LoginTests - Step 1: Entering username: standard_user
+2026-06-24 12:04:38.750 [main] INFO  c.s.automation.tests.LoginTests - Step 2: Entering password: ********
+2026-06-24 12:04:39.421 [main] INFO  c.s.automation.tests.LoginTests - Step 3: Clicking login button
+2026-06-24 12:04:40.827 [main] INFO  c.s.automation.tests.CheckoutTests - ✓ Login SUCCESSFUL - Inventory page displayed
+2026-06-24 12:04:41.140 [main] INFO  c.s.automation.pages.InventoryPage - Found 6 add-to-cart buttons on inventory page
+2026-06-24 12:04:41.161 [main] INFO  c.s.automation.pages.InventoryPage - Attempting to click button at index 0 with text: 'Add to cart'
+2026-06-24 12:04:41.921 [main] INFO  c.s.automation.pages.InventoryPage - Button text after click: 'Remove'
+2026-06-24 12:04:41.921 [main] INFO  c.s.automation.pages.InventoryPage - ✓ Product successfully added to cart (button changed to 'Remove')
+2026-06-24 12:04:41.921 [main] INFO  c.s.automation.tests.CheckoutTests - Step 2: Added product at index 0 to cart
+2026-06-24 12:04:42.113 [main] INFO  c.s.automation.tests.CheckoutTests - Step 3: Navigated to cart page
+2026-06-24 12:04:42.315 [main] INFO  c.s.automation.tests.CheckoutTests - Step 4: Clicked checkout button
+2026-06-24 12:04:42.318 [main] INFO  c.s.automation.tests.CheckoutTests - ✓ Setup completed - Ready for checkout test
+<div style='margin:5px 0; padding:5px; background-color:#f0f8ff; border-left:3px solid #1e90ff;'><b>Test Data:</b><br/><table border='1' cellpadding='3' cellspacing='0' style='border-collapse:collapse; font-size:13px;'><tr style='background-color:#1e90ff; color:white;'><th>Field</th><th>Value</th></tr><tr><td>ExpectedResult</td><td>FAILURE</td></tr><tr><td>Description</td><td>Checkout without first name</td></tr><tr><td>TestCase</td><td>TC2</td></tr><tr><td>Username</td><td>standard_user</td></tr><tr><td>FirstName</td><td></td></tr><tr><td>ProductIndex</td><td>0</td></tr><tr><td>PostalCode</td><td>632007</td></tr><tr><td>LastName</td><td>N</td></tr><tr><td>ErrorMessage</td><td>Error: First Name is required</td></tr><tr><td>Password</td><td>secret_sauce</td></tr></table></div>
+2026-06-24 12:04:42.320 [main] INFO  c.s.automation.tests.CheckoutTests - ========== Executing Test Case: TC2 ==========
+2026-06-24 12:04:42.320 [main] INFO  c.s.automation.tests.CheckoutTests - Description: Checkout without first name
+2026-06-24 12:04:42.321 [main] INFO  c.s.automation.tests.CheckoutTests - Expected Result: FAILURE
+2026-06-24 12:04:42.321 [main] INFO  c.s.automation.tests.CheckoutTests - Step 5: Entering checkout information
+2026-06-24 12:04:42.321 [main] INFO  c.s.automation.tests.CheckoutTests -   - First Name: <empty>
+2026-06-24 12:04:42.321 [main] INFO  c.s.automation.tests.CheckoutTests -   - Last Name: N
+2026-06-24 12:04:42.321 [main] INFO  c.s.automation.tests.CheckoutTests -   - Postal Code: 632007
+2026-06-24 12:04:44.054 [main] INFO  c.s.automation.tests.CheckoutTests - Step 6: Clicked continue button
+2026-06-24 12:04:44.054 [main] INFO  c.s.automation.tests.CheckoutTests - ========== Test Case TC2 Completed ==========
+]]></system-out>
+  </testcase>
+  <testcase name="testCheckoutFunctionality[{ExpectedResult=FAILURE, Description=Checkout without last name, TestCase=TC3, Username=standard_user, FirstName=Mugunthan, ProductIndex=0, PostalCode=632007, LastName=, ErrorMessage=Error: Last Name is required, Password=secret_sauce}](3)" classname="com.saucedemo.automation.tests.CheckoutTests" time="1.615">
+    <system-out><![CDATA[<div style='margin:5px 0; padding:5px; background-color:#28a74520; border-left:3px solid #28a745;'><b>Status: <span style='color:#28a745;'>PASSED</span></b> | Duration: 1735 ms</div>
+2026-06-24 12:04:44.345 [main] INFO  c.s.automation.utils.BrowserUtil - Navigated to: https://www.saucedemo.com/
+2026-06-24 12:04:55.006 [main] ERROR c.s.automation.tests.CheckoutTests - Error during logout: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: react-burger-menu-btn' (tried for 10 second(s) with 500 milliseconds interval)
+2026-06-24 12:04:55.006 [main] INFO  c.s.automation.tests.CheckoutTests - ========== Setup for Test Case: TC3 ==========
+2026-06-24 12:04:55.105 [main] INFO  c.s.automation.utils.BrowserUtil - Navigated to: https://www.saucedemo.com/
+2026-06-24 12:04:55.105 [main] INFO  c.s.automation.tests.CheckoutTests - Step 1: Navigated to base URL
+2026-06-24 12:04:55.107 [main] INFO  c.s.automation.tests.LoginTests - Step 1: Entering username: standard_user
+2026-06-24 12:04:55.280 [main] INFO  c.s.automation.tests.LoginTests - Step 2: Entering password: ********
+2026-06-24 12:04:55.444 [main] INFO  c.s.automation.tests.LoginTests - Step 3: Clicking login button
+2026-06-24 12:04:55.643 [main] INFO  c.s.automation.tests.CheckoutTests - ✓ Login SUCCESSFUL - Inventory page displayed
+2026-06-24 12:04:55.692 [main] INFO  c.s.automation.pages.InventoryPage - Found 6 add-to-cart buttons on inventory page
+2026-06-24 12:04:55.703 [main] INFO  c.s.automation.pages.InventoryPage - Attempting to click button at index 0 with text: 'Remove'
+2026-06-24 12:04:56.313 [main] INFO  c.s.automation.pages.InventoryPage - Button text after click: 'Add to cart'
+2026-06-24 12:04:56.313 [main] WARN  c.s.automation.pages.InventoryPage - Warning: Button text is 'Add to cart' instead of expected 'Remove'
+2026-06-24 12:04:56.313 [main] INFO  c.s.automation.tests.CheckoutTests - Step 2: Added product at index 0 to cart
+2026-06-24 12:04:56.420 [main] INFO  c.s.automation.tests.CheckoutTests - Step 3: Navigated to cart page
+2026-06-24 12:04:56.598 [main] INFO  c.s.automation.tests.CheckoutTests - Step 4: Clicked checkout button
+2026-06-24 12:04:56.600 [main] INFO  c.s.automation.tests.CheckoutTests - ✓ Setup completed - Ready for checkout test
+<div style='margin:5px 0; padding:5px; background-color:#f0f8ff; border-left:3px solid #1e90ff;'><b>Test Data:</b><br/><table border='1' cellpadding='3' cellspacing='0' style='border-collapse:collapse; font-size:13px;'><tr style='background-color:#1e90ff; color:white;'><th>Field</th><th>Value</th></tr><tr><td>ExpectedResult</td><td>FAILURE</td></tr><tr><td>Description</td><td>Checkout without last name</td></tr><tr><td>TestCase</td><td>TC3</td></tr><tr><td>Username</td><td>standard_user</td></tr><tr><td>FirstName</td><td>Mugunthan</td></tr><tr><td>ProductIndex</td><td>0</td></tr><tr><td>PostalCode</td><td>632007</td></tr><tr><td>LastName</td><td></td></tr><tr><td>ErrorMessage</td><td>Error: Last Name is required</td></tr><tr><td>Password</td><td>secret_sauce</td></tr></table></div>
+2026-06-24 12:04:56.601 [main] INFO  c.s.automation.tests.CheckoutTests - ========== Executing Test Case: TC3 ==========
+2026-06-24 12:04:56.602 [main] INFO  c.s.automation.tests.CheckoutTests - Description: Checkout without last name
+2026-06-24 12:04:56.602 [main] INFO  c.s.automation.tests.CheckoutTests - Expected Result: FAILURE
+2026-06-24 12:04:56.602 [main] INFO  c.s.automation.tests.CheckoutTests - Step 5: Entering checkout information
+2026-06-24 12:04:56.602 [main] INFO  c.s.automation.tests.CheckoutTests -   - First Name: Mugunthan
+2026-06-24 12:04:56.602 [main] INFO  c.s.automation.tests.CheckoutTests -   - Last Name: <empty>
+2026-06-24 12:04:56.602 [main] INFO  c.s.automation.tests.CheckoutTests -   - Postal Code: 632007
+2026-06-24 12:04:58.216 [main] INFO  c.s.automation.tests.CheckoutTests - Step 6: Clicked continue button
+2026-06-24 12:04:58.217 [main] INFO  c.s.automation.tests.CheckoutTests - ========== Test Case TC3 Completed ==========
+]]></system-out>
+  </testcase>
+  <testcase name="testCheckoutFunctionality[{ExpectedResult=FAILURE, Description=Checkout without postal code, TestCase=TC4, Username=standard_user, FirstName=Mugunthan, ProductIndex=0, PostalCode=, LastName=Doe, ErrorMessage=Error: Postal Code is required, Password=secret_sauce}](4)" classname="com.saucedemo.automation.tests.CheckoutTests" time="1.669">
+    <system-out><![CDATA[<div style='margin:5px 0; padding:5px; background-color:#28a74520; border-left:3px solid #28a745;'><b>Status: <span style='color:#28a745;'>PASSED</span></b> | Duration: 1617 ms</div>
+2026-06-24 12:04:58.272 [main] INFO  c.s.automation.utils.BrowserUtil - Navigated to: https://www.saucedemo.com/
+2026-06-24 12:05:08.923 [main] ERROR c.s.automation.tests.CheckoutTests - Error during logout: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: react-burger-menu-btn' (tried for 10 second(s) with 500 milliseconds interval)
+2026-06-24 12:05:08.923 [main] INFO  c.s.automation.tests.CheckoutTests - ========== Setup for Test Case: TC4 ==========
+2026-06-24 12:05:08.975 [main] INFO  c.s.automation.utils.BrowserUtil - Navigated to: https://www.saucedemo.com/
+2026-06-24 12:05:08.976 [main] INFO  c.s.automation.tests.CheckoutTests - Step 1: Navigated to base URL
+2026-06-24 12:05:08.977 [main] INFO  c.s.automation.tests.LoginTests - Step 1: Entering username: standard_user
+2026-06-24 12:05:09.120 [main] INFO  c.s.automation.tests.LoginTests - Step 2: Entering password: ********
+2026-06-24 12:05:09.235 [main] INFO  c.s.automation.tests.LoginTests - Step 3: Clicking login button
+2026-06-24 12:05:09.401 [main] INFO  c.s.automation.tests.CheckoutTests - ✓ Login SUCCESSFUL - Inventory page displayed
+2026-06-24 12:05:09.442 [main] INFO  c.s.automation.pages.InventoryPage - Found 6 add-to-cart buttons on inventory page
+2026-06-24 12:05:09.450 [main] INFO  c.s.automation.pages.InventoryPage - Attempting to click button at index 0 with text: 'Add to cart'
+2026-06-24 12:05:10.147 [main] INFO  c.s.automation.pages.InventoryPage - Button text after click: 'Remove'
+2026-06-24 12:05:10.147 [main] INFO  c.s.automation.pages.InventoryPage - ✓ Product successfully added to cart (button changed to 'Remove')
+2026-06-24 12:05:10.147 [main] INFO  c.s.automation.tests.CheckoutTests - Step 2: Added product at index 0 to cart
+2026-06-24 12:05:10.283 [main] INFO  c.s.automation.tests.CheckoutTests - Step 3: Navigated to cart page
+2026-06-24 12:05:10.522 [main] INFO  c.s.automation.tests.CheckoutTests - Step 4: Clicked checkout button
+2026-06-24 12:05:10.524 [main] INFO  c.s.automation.tests.CheckoutTests - ✓ Setup completed - Ready for checkout test
+<div style='margin:5px 0; padding:5px; background-color:#f0f8ff; border-left:3px solid #1e90ff;'><b>Test Data:</b><br/><table border='1' cellpadding='3' cellspacing='0' style='border-collapse:collapse; font-size:13px;'><tr style='background-color:#1e90ff; color:white;'><th>Field</th><th>Value</th></tr><tr><td>ExpectedResult</td><td>FAILURE</td></tr><tr><td>Description</td><td>Checkout without postal code</td></tr><tr><td>TestCase</td><td>TC4</td></tr><tr><td>Username</td><td>standard_user</td></tr><tr><td>FirstName</td><td>Mugunthan</td></tr><tr><td>ProductIndex</td><td>0</td></tr><tr><td>PostalCode</td><td></td></tr><tr><td>LastName</td><td>Doe</td></tr><tr><td>ErrorMessage</td><td>Error: Postal Code is required</td></tr><tr><td>Password</td><td>secret_sauce</td></tr></table></div>
+2026-06-24 12:05:10.526 [main] INFO  c.s.automation.tests.CheckoutTests - ========== Executing Test Case: TC4 ==========
+2026-06-24 12:05:10.526 [main] INFO  c.s.automation.tests.CheckoutTests - Description: Checkout without postal code
+2026-06-24 12:05:10.526 [main] INFO  c.s.automation.tests.CheckoutTests - Expected Result: FAILURE
+2026-06-24 12:05:10.526 [main] INFO  c.s.automation.tests.CheckoutTests - Step 5: Entering checkout information
+2026-06-24 12:05:10.526 [main] INFO  c.s.automation.tests.CheckoutTests -   - First Name: Mugunthan
+2026-06-24 12:05:10.526 [main] INFO  c.s.automation.tests.CheckoutTests -   - Last Name: Doe
+2026-06-24 12:05:10.526 [main] INFO  c.s.automation.tests.CheckoutTests -   - Postal Code: <empty>
+2026-06-24 12:05:12.194 [main] INFO  c.s.automation.tests.CheckoutTests - Step 6: Clicked continue button
+2026-06-24 12:05:12.194 [main] INFO  c.s.automation.tests.CheckoutTests - ========== Test Case TC4 Completed ==========
+]]></system-out>
+  </testcase>
+  <testcase name="testCheckoutFunctionality[{ExpectedResult=FAILURE, Description=Checkout with all empty fields, TestCase=TC5, Username=standard_user, FirstName=, ProductIndex=0, PostalCode=, LastName=, ErrorMessage=Error: First Name is required, Password=secret_sauce}](5)" classname="com.saucedemo.automation.tests.CheckoutTests" time="1.452">
+    <system-out><![CDATA[<div style='margin:5px 0; padding:5px; background-color:#28a74520; border-left:3px solid #28a745;'><b>Status: <span style='color:#28a745;'>PASSED</span></b> | Duration: 1669 ms</div>
+2026-06-24 12:05:12.249 [main] INFO  c.s.automation.utils.BrowserUtil - Navigated to: https://www.saucedemo.com/
+2026-06-24 12:05:22.926 [main] ERROR c.s.automation.tests.CheckoutTests - Error during logout: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: react-burger-menu-btn' (tried for 10 second(s) with 500 milliseconds interval)
+2026-06-24 12:05:22.926 [main] INFO  c.s.automation.tests.CheckoutTests - ========== Setup for Test Case: TC5 ==========
+2026-06-24 12:05:22.971 [main] INFO  c.s.automation.utils.BrowserUtil - Navigated to: https://www.saucedemo.com/
+2026-06-24 12:05:22.971 [main] INFO  c.s.automation.tests.CheckoutTests - Step 1: Navigated to base URL
+2026-06-24 12:05:22.971 [main] INFO  c.s.automation.tests.LoginTests - Step 1: Entering username: standard_user
+2026-06-24 12:05:23.115 [main] INFO  c.s.automation.tests.LoginTests - Step 2: Entering password: ********
+2026-06-24 12:05:23.228 [main] INFO  c.s.automation.tests.LoginTests - Step 3: Clicking login button
+2026-06-24 12:05:23.373 [main] INFO  c.s.automation.tests.CheckoutTests - ✓ Login SUCCESSFUL - Inventory page displayed
+2026-06-24 12:05:23.413 [main] INFO  c.s.automation.pages.InventoryPage - Found 6 add-to-cart buttons on inventory page
+2026-06-24 12:05:23.424 [main] INFO  c.s.automation.pages.InventoryPage - Attempting to click button at index 0 with text: 'Remove'
+2026-06-24 12:05:24.017 [main] INFO  c.s.automation.pages.InventoryPage - Button text after click: 'Add to cart'
+2026-06-24 12:05:24.017 [main] WARN  c.s.automation.pages.InventoryPage - Warning: Button text is 'Add to cart' instead of expected 'Remove'
+2026-06-24 12:05:24.017 [main] INFO  c.s.automation.tests.CheckoutTests - Step 2: Added product at index 0 to cart
+2026-06-24 12:05:24.161 [main] INFO  c.s.automation.tests.CheckoutTests - Step 3: Navigated to cart page
+2026-06-24 12:05:24.319 [main] INFO  c.s.automation.tests.CheckoutTests - Step 4: Clicked checkout button
+2026-06-24 12:05:24.320 [main] INFO  c.s.automation.tests.CheckoutTests - ✓ Setup completed - Ready for checkout test
+<div style='margin:5px 0; padding:5px; background-color:#f0f8ff; border-left:3px solid #1e90ff;'><b>Test Data:</b><br/><table border='1' cellpadding='3' cellspacing='0' style='border-collapse:collapse; font-size:13px;'><tr style='background-color:#1e90ff; color:white;'><th>Field</th><th>Value</th></tr><tr><td>ExpectedResult</td><td>FAILURE</td></tr><tr><td>Description</td><td>Checkout with all empty fields</td></tr><tr><td>TestCase</td><td>TC5</td></tr><tr><td>Username</td><td>standard_user</td></tr><tr><td>FirstName</td><td></td></tr><tr><td>ProductIndex</td><td>0</td></tr><tr><td>PostalCode</td><td></td></tr><tr><td>LastName</td><td></td></tr><tr><td>ErrorMessage</td><td>Error: First Name is required</td></tr><tr><td>Password</td><td>secret_sauce</td></tr></table></div>
+2026-06-24 12:05:24.321 [main] INFO  c.s.automation.tests.CheckoutTests - ========== Executing Test Case: TC5 ==========
+2026-06-24 12:05:24.321 [main] INFO  c.s.automation.tests.CheckoutTests - Description: Checkout with all empty fields
+2026-06-24 12:05:24.321 [main] INFO  c.s.automation.tests.CheckoutTests - Expected Result: FAILURE
+2026-06-24 12:05:24.321 [main] INFO  c.s.automation.tests.CheckoutTests - Step 5: Entering checkout information
+2026-06-24 12:05:24.322 [main] INFO  c.s.automation.tests.CheckoutTests -   - First Name: <empty>
+2026-06-24 12:05:24.322 [main] INFO  c.s.automation.tests.CheckoutTests -   - Last Name: <empty>
+2026-06-24 12:05:24.322 [main] INFO  c.s.automation.tests.CheckoutTests -   - Postal Code: <empty>
+2026-06-24 12:05:25.772 [main] INFO  c.s.automation.tests.CheckoutTests - Step 6: Clicked continue button
+2026-06-24 12:05:25.772 [main] INFO  c.s.automation.tests.CheckoutTests - ========== Test Case TC5 Completed ==========
+]]></system-out>
+  </testcase>
+  <testcase name="testCheckoutFunctionality[{ExpectedResult=SUCCESS, Description=Checkout with multiple items, TestCase=TC6, Username=standard_user, FirstName=Abraham Benjamin, ProductIndex=0,1, PostalCode=632007, LastName=Devillers, ErrorMessage=, Password=secret_sauce}](6)" classname="com.saucedemo.automation.tests.CheckoutTests" time="1.696">
+    <system-out><![CDATA[<div style='margin:5px 0; padding:5px; background-color:#28a74520; border-left:3px solid #28a745;'><b>Status: <span style='color:#28a745;'>PASSED</span></b> | Duration: 1453 ms</div>
+2026-06-24 12:05:25.825 [main] INFO  c.s.automation.utils.BrowserUtil - Navigated to: https://www.saucedemo.com/
+2026-06-24 12:05:36.483 [main] ERROR c.s.automation.tests.CheckoutTests - Error during logout: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: react-burger-menu-btn' (tried for 10 second(s) with 500 milliseconds interval)
+2026-06-24 12:05:36.483 [main] INFO  c.s.automation.tests.CheckoutTests - ========== Setup for Test Case: TC6 ==========
+2026-06-24 12:05:36.543 [main] INFO  c.s.automation.utils.BrowserUtil - Navigated to: https://www.saucedemo.com/
+2026-06-24 12:05:36.544 [main] INFO  c.s.automation.tests.CheckoutTests - Step 1: Navigated to base URL
+2026-06-24 12:05:36.544 [main] INFO  c.s.automation.tests.LoginTests - Step 1: Entering username: standard_user
+2026-06-24 12:05:36.676 [main] INFO  c.s.automation.tests.LoginTests - Step 2: Entering password: ********
+2026-06-24 12:05:36.790 [main] INFO  c.s.automation.tests.LoginTests - Step 3: Clicking login button
+2026-06-24 12:05:36.949 [main] INFO  c.s.automation.tests.CheckoutTests - ✓ Login SUCCESSFUL - Inventory page displayed
+2026-06-24 12:05:36.992 [main] INFO  c.s.automation.pages.InventoryPage - Found 6 add-to-cart buttons on inventory page
+2026-06-24 12:05:37.003 [main] INFO  c.s.automation.pages.InventoryPage - Attempting to click button at index 0 with text: 'Add to cart'
+2026-06-24 12:05:37.597 [main] INFO  c.s.automation.pages.InventoryPage - Button text after click: 'Remove'
+2026-06-24 12:05:37.597 [main] INFO  c.s.automation.pages.InventoryPage - ✓ Product successfully added to cart (button changed to 'Remove')
+2026-06-24 12:05:37.597 [main] INFO  c.s.automation.tests.CheckoutTests - Step 2: Added product at index 0 to cart
+2026-06-24 12:05:37.649 [main] INFO  c.s.automation.pages.InventoryPage - Found 6 add-to-cart buttons on inventory page
+2026-06-24 12:05:37.660 [main] INFO  c.s.automation.pages.InventoryPage - Attempting to click button at index 1 with text: 'Add to cart'
+2026-06-24 12:05:38.256 [main] INFO  c.s.automation.pages.InventoryPage - Button text after click: 'Remove'
+2026-06-24 12:05:38.257 [main] INFO  c.s.automation.pages.InventoryPage - ✓ Product successfully added to cart (button changed to 'Remove')
+2026-06-24 12:05:38.257 [main] INFO  c.s.automation.tests.CheckoutTests - Step 2: Added product at index 1 to cart
+2026-06-24 12:05:38.347 [main] INFO  c.s.automation.tests.CheckoutTests - Step 3: Navigated to cart page
+2026-06-24 12:05:38.486 [main] INFO  c.s.automation.tests.CheckoutTests - Step 4: Clicked checkout button
+2026-06-24 12:05:38.486 [main] INFO  c.s.automation.tests.CheckoutTests - ✓ Setup completed - Ready for checkout test
+<div style='margin:5px 0; padding:5px; background-color:#f0f8ff; border-left:3px solid #1e90ff;'><b>Test Data:</b><br/><table border='1' cellpadding='3' cellspacing='0' style='border-collapse:collapse; font-size:13px;'><tr style='background-color:#1e90ff; color:white;'><th>Field</th><th>Value</th></tr><tr><td>ExpectedResult</td><td>SUCCESS</td></tr><tr><td>Description</td><td>Checkout with multiple items</td></tr><tr><td>TestCase</td><td>TC6</td></tr><tr><td>Username</td><td>standard_user</td></tr><tr><td>FirstName</td><td>Abraham Benjamin</td></tr><tr><td>ProductIndex</td><td>0,1</td></tr><tr><td>PostalCode</td><td>632007</td></tr><tr><td>LastName</td><td>Devillers</td></tr><tr><td>ErrorMessage</td><td></td></tr><tr><td>Password</td><td>secret_sauce</td></tr></table></div>
+2026-06-24 12:05:38.487 [main] INFO  c.s.automation.tests.CheckoutTests - ========== Executing Test Case: TC6 ==========
+2026-06-24 12:05:38.487 [main] INFO  c.s.automation.tests.CheckoutTests - Description: Checkout with multiple items
+2026-06-24 12:05:38.487 [main] INFO  c.s.automation.tests.CheckoutTests - Expected Result: SUCCESS
+2026-06-24 12:05:38.487 [main] INFO  c.s.automation.tests.CheckoutTests - Step 5: Entering checkout information
+2026-06-24 12:05:38.487 [main] INFO  c.s.automation.tests.CheckoutTests -   - First Name: Abraham Benjamin
+2026-06-24 12:05:38.487 [main] INFO  c.s.automation.tests.CheckoutTests -   - Last Name: Devillers
+2026-06-24 12:05:38.487 [main] INFO  c.s.automation.tests.CheckoutTests -   - Postal Code: 632007
+2026-06-24 12:05:40.016 [main] INFO  c.s.automation.tests.CheckoutTests - Step 6: Clicked continue button
+2026-06-24 12:05:40.016 [main] INFO  c.s.automation.tests.CheckoutTests - Step 7: Clicking finish to complete order
+2026-06-24 12:05:40.181 [main] INFO  c.s.automation.tests.CheckoutTests - Step 8: Verifying order completion
+2026-06-24 12:05:40.181 [main] INFO  c.s.automation.tests.CheckoutTests - ✓ Order completion verification PASSED
+2026-06-24 12:05:40.181 [main] INFO  c.s.automation.tests.CheckoutTests - ========== Test Case TC6 Completed ==========
+]]></system-out>
+  </testcase>
+  <testcase name="testCheckoutFunctionality[{ExpectedResult=SUCCESS, Description=Checkout with numeric postal code, TestCase=TC7, Username=standard_user, FirstName=Virat, ProductIndex=0, PostalCode=632007, LastName=Kohli, ErrorMessage=, Password=secret_sauce}](7)" classname="com.saucedemo.automation.tests.CheckoutTests" time="1.699">
+    <system-out><![CDATA[<div style='margin:5px 0; padding:5px; background-color:#28a74520; border-left:3px solid #28a745;'><b>Status: <span style='color:#28a745;'>PASSED</span></b> | Duration: 1695 ms</div>
+2026-06-24 12:05:40.254 [main] INFO  c.s.automation.utils.BrowserUtil - Navigated to: https://www.saucedemo.com/
+2026-06-24 12:05:50.885 [main] ERROR c.s.automation.tests.CheckoutTests - Error during logout: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: react-burger-menu-btn' (tried for 10 second(s) with 500 milliseconds interval)
+2026-06-24 12:05:50.885 [main] INFO  c.s.automation.tests.CheckoutTests - ========== Setup for Test Case: TC7 ==========
+2026-06-24 12:05:50.926 [main] INFO  c.s.automation.utils.BrowserUtil - Navigated to: https://www.saucedemo.com/
+2026-06-24 12:05:50.926 [main] INFO  c.s.automation.tests.CheckoutTests - Step 1: Navigated to base URL
+2026-06-24 12:05:50.926 [main] INFO  c.s.automation.tests.LoginTests - Step 1: Entering username: standard_user
+2026-06-24 12:05:51.061 [main] INFO  c.s.automation.tests.LoginTests - Step 2: Entering password: ********
+2026-06-24 12:05:51.174 [main] INFO  c.s.automation.tests.LoginTests - Step 3: Clicking login button
+2026-06-24 12:05:51.334 [main] INFO  c.s.automation.tests.CheckoutTests - ✓ Login SUCCESSFUL - Inventory page displayed
+2026-06-24 12:05:51.373 [main] INFO  c.s.automation.pages.InventoryPage - Found 6 add-to-cart buttons on inventory page
+2026-06-24 12:05:51.389 [main] INFO  c.s.automation.pages.InventoryPage - Attempting to click button at index 0 with text: 'Add to cart'
+2026-06-24 12:05:51.983 [main] INFO  c.s.automation.pages.InventoryPage - Button text after click: 'Remove'
+2026-06-24 12:05:51.983 [main] INFO  c.s.automation.pages.InventoryPage - ✓ Product successfully added to cart (button changed to 'Remove')
+2026-06-24 12:05:51.983 [main] INFO  c.s.automation.tests.CheckoutTests - Step 2: Added product at index 0 to cart
+2026-06-24 12:05:52.070 [main] INFO  c.s.automation.tests.CheckoutTests - Step 3: Navigated to cart page
+2026-06-24 12:05:52.198 [main] INFO  c.s.automation.tests.CheckoutTests - Step 4: Clicked checkout button
+2026-06-24 12:05:52.199 [main] INFO  c.s.automation.tests.CheckoutTests - ✓ Setup completed - Ready for checkout test
+<div style='margin:5px 0; padding:5px; background-color:#f0f8ff; border-left:3px solid #1e90ff;'><b>Test Data:</b><br/><table border='1' cellpadding='3' cellspacing='0' style='border-collapse:collapse; font-size:13px;'><tr style='background-color:#1e90ff; color:white;'><th>Field</th><th>Value</th></tr><tr><td>ExpectedResult</td><td>SUCCESS</td></tr><tr><td>Description</td><td>Checkout with numeric postal code</td></tr><tr><td>TestCase</td><td>TC7</td></tr><tr><td>Username</td><td>standard_user</td></tr><tr><td>FirstName</td><td>Virat</td></tr><tr><td>ProductIndex</td><td>0</td></tr><tr><td>PostalCode</td><td>632007</td></tr><tr><td>LastName</td><td>Kohli</td></tr><tr><td>ErrorMessage</td><td></td></tr><tr><td>Password</td><td>secret_sauce</td></tr></table></div>
+2026-06-24 12:05:52.201 [main] INFO  c.s.automation.tests.CheckoutTests - ========== Executing Test Case: TC7 ==========
+2026-06-24 12:05:52.201 [main] INFO  c.s.automation.tests.CheckoutTests - Description: Checkout with numeric postal code
+2026-06-24 12:05:52.201 [main] INFO  c.s.automation.tests.CheckoutTests - Expected Result: SUCCESS
+2026-06-24 12:05:52.201 [main] INFO  c.s.automation.tests.CheckoutTests - Step 5: Entering checkout information
+2026-06-24 12:05:52.201 [main] INFO  c.s.automation.tests.CheckoutTests -   - First Name: Virat
+2026-06-24 12:05:52.201 [main] INFO  c.s.automation.tests.CheckoutTests -   - Last Name: Kohli
+2026-06-24 12:05:52.201 [main] INFO  c.s.automation.tests.CheckoutTests -   - Postal Code: 632007
+2026-06-24 12:05:53.780 [main] INFO  c.s.automation.tests.CheckoutTests - Step 6: Clicked continue button
+2026-06-24 12:05:53.780 [main] INFO  c.s.automation.tests.CheckoutTests - Step 7: Clicking finish to complete order
+2026-06-24 12:05:53.899 [main] INFO  c.s.automation.tests.CheckoutTests - Step 8: Verifying order completion
+2026-06-24 12:05:53.899 [main] INFO  c.s.automation.tests.CheckoutTests - ✓ Order completion verification PASSED
+2026-06-24 12:05:53.899 [main] INFO  c.s.automation.tests.CheckoutTests - ========== Test Case TC7 Completed ==========
+]]></system-out>
+  </testcase>
+  <testcase name="testCheckoutFunctionality[{ExpectedResult=SUCCESS, Description=Checkout with alphanumeric postal code, TestCase=TC8, Username=standard_user, FirstName=Chris, ProductIndex=0, PostalCode=VLR007, LastName=Gayle, ErrorMessage=, Password=secret_sauce}](8)" classname="com.saucedemo.automation.tests.CheckoutTests" time="1.619">
+    <system-out><![CDATA[<div style='margin:5px 0; padding:5px; background-color:#28a74520; border-left:3px solid #28a745;'><b>Status: <span style='color:#28a745;'>PASSED</span></b> | Duration: 1700 ms</div>
+2026-06-24 12:05:53.947 [main] INFO  c.s.automation.utils.BrowserUtil - Navigated to: https://www.saucedemo.com/
+2026-06-24 12:06:04.611 [main] ERROR c.s.automation.tests.CheckoutTests - Error during logout: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: react-burger-menu-btn' (tried for 10 second(s) with 500 milliseconds interval)
+2026-06-24 12:06:04.611 [main] INFO  c.s.automation.tests.CheckoutTests - ========== Setup for Test Case: TC8 ==========
+2026-06-24 12:06:04.655 [main] INFO  c.s.automation.utils.BrowserUtil - Navigated to: https://www.saucedemo.com/
+2026-06-24 12:06:04.655 [main] INFO  c.s.automation.tests.CheckoutTests - Step 1: Navigated to base URL
+2026-06-24 12:06:04.656 [main] INFO  c.s.automation.tests.LoginTests - Step 1: Entering username: standard_user
+2026-06-24 12:06:04.790 [main] INFO  c.s.automation.tests.LoginTests - Step 2: Entering password: ********
+2026-06-24 12:06:04.903 [main] INFO  c.s.automation.tests.LoginTests - Step 3: Clicking login button
+2026-06-24 12:06:05.053 [main] INFO  c.s.automation.tests.CheckoutTests - ✓ Login SUCCESSFUL - Inventory page displayed
+2026-06-24 12:06:05.101 [main] INFO  c.s.automation.pages.InventoryPage - Found 6 add-to-cart buttons on inventory page
+2026-06-24 12:06:05.112 [main] INFO  c.s.automation.pages.InventoryPage - Attempting to click button at index 0 with text: 'Add to cart'
+2026-06-24 12:06:05.724 [main] INFO  c.s.automation.pages.InventoryPage - Button text after click: 'Remove'
+2026-06-24 12:06:05.728 [main] INFO  c.s.automation.pages.InventoryPage - ✓ Product successfully added to cart (button changed to 'Remove')
+2026-06-24 12:06:05.728 [main] INFO  c.s.automation.tests.CheckoutTests - Step 2: Added product at index 0 to cart
+2026-06-24 12:06:05.830 [main] INFO  c.s.automation.tests.CheckoutTests - Step 3: Navigated to cart page
+2026-06-24 12:06:05.984 [main] INFO  c.s.automation.tests.CheckoutTests - Step 4: Clicked checkout button
+2026-06-24 12:06:05.986 [main] INFO  c.s.automation.tests.CheckoutTests - ✓ Setup completed - Ready for checkout test
+<div style='margin:5px 0; padding:5px; background-color:#f0f8ff; border-left:3px solid #1e90ff;'><b>Test Data:</b><br/><table border='1' cellpadding='3' cellspacing='0' style='border-collapse:collapse; font-size:13px;'><tr style='background-color:#1e90ff; color:white;'><th>Field</th><th>Value</th></tr><tr><td>ExpectedResult</td><td>SUCCESS</td></tr><tr><td>Description</td><td>Checkout with alphanumeric postal code</td></tr><tr><td>TestCase</td><td>TC8</td></tr><tr><td>Username</td><td>standard_user</td></tr><tr><td>FirstName</td><td>Chris</td></tr><tr><td>ProductIndex</td><td>0</td></tr><tr><td>PostalCode</td><td>VLR007</td></tr><tr><td>LastName</td><td>Gayle</td></tr><tr><td>ErrorMessage</td><td></td></tr><tr><td>Password</td><td>secret_sauce</td></tr></table></div>
+2026-06-24 12:06:05.987 [main] INFO  c.s.automation.tests.CheckoutTests - ========== Executing Test Case: TC8 ==========
+2026-06-24 12:06:05.987 [main] INFO  c.s.automation.tests.CheckoutTests - Description: Checkout with alphanumeric postal code
+2026-06-24 12:06:05.987 [main] INFO  c.s.automation.tests.CheckoutTests - Expected Result: SUCCESS
+2026-06-24 12:06:05.987 [main] INFO  c.s.automation.tests.CheckoutTests - Step 5: Entering checkout information
+2026-06-24 12:06:05.987 [main] INFO  c.s.automation.tests.CheckoutTests -   - First Name: Chris
+2026-06-24 12:06:05.987 [main] INFO  c.s.automation.tests.CheckoutTests -   - Last Name: Gayle
+2026-06-24 12:06:05.987 [main] INFO  c.s.automation.tests.CheckoutTests -   - Postal Code: VLR007
+2026-06-24 12:06:07.452 [main] INFO  c.s.automation.tests.CheckoutTests - Step 6: Clicked continue button
+2026-06-24 12:06:07.452 [main] INFO  c.s.automation.tests.CheckoutTests - Step 7: Clicking finish to complete order
+2026-06-24 12:06:07.605 [main] INFO  c.s.automation.tests.CheckoutTests - Step 8: Verifying order completion
+2026-06-24 12:06:07.605 [main] INFO  c.s.automation.tests.CheckoutTests - ✓ Order completion verification PASSED
+2026-06-24 12:06:07.606 [main] INFO  c.s.automation.tests.CheckoutTests - ========== Test Case TC8 Completed ==========
+]]></system-out>
+  </testcase>
+</testsuite>

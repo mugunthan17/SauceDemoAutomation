@@ -1,0 +1,108 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="SauceDemo_Checkout_Tests" parallel="false" allow-return-values="true" preserve-order="true">
+
+	<!-- ============================================ -->
+	<!-- CHECKOUT TEST SUITE CONFIGURATION            -->
+	<!-- ============================================ -->
+	
+	<!-- Global Parameters -->
+	<parameter name="configurationFilesDirectory" value="./src/main/resources/config" />
+	<parameter name="logName" value="CHECKOUT_TESTS_LOGS"/> 
+	<parameter name="baseUrl" value="https://www.saucedemo.com/" />
+	<parameter name="browser" value="chrome" />
+	<parameter name="captureScreenshot" value="true" />
+	
+	<!-- Test Data Reporting -->
+	<listeners>
+		<listener class-name="com.saucedemo.automation.utils.TestDataReportListener"/>
+	</listeners>
+
+	<!-- ============================================ -->
+	<!-- CHECKOUT TEST SCENARIOS                      -->
+	<!-- User can configure testDataSets parameter    -->
+	<!-- Options: TC1, TC2, TC3, TC4, ALL            -->
+	<!-- or Combinations: TC1,TC2,TC3                -->
+	<!-- ============================================ -->
+	
+	<!-- Test: Complete Checkout with Valid Information -->
+	<test name="Checkout_ValidInformation"> 
+		<parameter name="testCode" value="./src/main/resources/testdata/CheckoutData.xlsx:TEST_CODE" />     
+		<parameter name="testData" value="./src/main/resources/testdata/CheckoutData.xlsx:CheckoutTests"/> 
+		<parameter name="testDataSets" value="TC1" /> 
+		<classes>
+			<class name="com.saucedemo.automation.tests.CheckoutTests">
+				<methods>					
+					<include name="testCompleteCheckout" />					
+				</methods>
+			</class>
+		</classes>   
+	</test>
+	
+	<!-- Test: Checkout with Missing First Name -->
+	<test name="Checkout_MissingFirstName"> 
+		<parameter name="testCode" value="./src/main/resources/testdata/CheckoutData.xlsx:TEST_CODE" />     
+		<parameter name="testData" value="./src/main/resources/testdata/CheckoutData.xlsx:CheckoutTests"/> 
+		<parameter name="testDataSets" value="TC2" /> 
+		<classes>
+			<class name="com.saucedemo.automation.tests.CheckoutTests">
+				<methods>					
+					<include name="testCheckoutWithMissingFields" />					
+				</methods>
+			</class>
+		</classes>   
+	</test>
+	
+	<!-- Test: Checkout with Missing Last Name -->
+	<test name="Checkout_MissingLastName"> 
+		<parameter name="testCode" value="./src/main/resources/testdata/CheckoutData.xlsx:TEST_CODE" />     
+		<parameter name="testData" value="./src/main/resources/testdata/CheckoutData.xlsx:CheckoutTests"/> 
+		<parameter name="testDataSets" value="TC3" /> 
+		<classes>
+			<class name="com.saucedemo.automation.tests.CheckoutTests">
+				<methods>					
+					<include name="testCheckoutWithMissingFields" />					
+				</methods>
+			</class>
+		</classes>   
+	</test>
+	
+	<!-- Test: Checkout with Missing Postal Code -->
+	<test name="Checkout_MissingPostalCode"> 
+		<parameter name="testCode" value="./src/main/resources/testdata/CheckoutData.xlsx:TEST_CODE" />     
+		<parameter name="testData" value="./src/main/resources/testdata/CheckoutData.xlsx:CheckoutTests"/> 
+		<parameter name="testDataSets" value="TC4" /> 
+		<classes>
+			<class name="com.saucedemo.automation.tests.CheckoutTests">
+				<methods>					
+					<include name="testCheckoutWithMissingFields" />					
+				</methods>
+			</class>
+		</classes>   
+	</test>
+	
+	<!-- Test: Verify Order Complete Message -->
+	<test name="Checkout_OrderCompleteMessage"> 
+		<parameter name="testCode" value="./src/main/resources/testdata/CheckoutData.xlsx:TEST_CODE" />     
+		<parameter name="testData" value="./src/main/resources/testdata/CheckoutData.xlsx:CheckoutTests"/> 
+		<parameter name="testDataSets" value="TC1" /> 
+		<classes>
+			<class name="com.saucedemo.automation.tests.CheckoutTests">
+				<methods>					
+					<include name="testOrderCompleteMessage" />					
+				</methods>
+			</class>
+		</classes>   
+	</test>
+	
+	<!-- Test: All Checkout Tests (Data-Driven) -->
+	<!-- Execute all test cases from Excel -->
+	<test name="Checkout_AllTests"> 
+		<parameter name="testCode" value="./src/main/resources/testdata/CheckoutData.xlsx:TEST_CODE" />     
+		<parameter name="testData" value="./src/main/resources/testdata/CheckoutData.xlsx:CheckoutTests"/> 
+		<parameter name="testDataSets" value="ALL" /> 
+		<classes>
+			<class name="com.saucedemo.automation.tests.CheckoutTests"/>
+		</classes>   
+	</test>
+
+</suite>

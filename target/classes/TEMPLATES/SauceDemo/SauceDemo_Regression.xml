@@ -1,0 +1,86 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="SauceDemo_Regression_Suite" parallel="classes" thread-count="3" allow-return-values="true" preserve-order="true">
+
+	<!-- ============================================ -->
+	<!-- REGRESSION TEST SUITE                        -->
+	<!-- Complete suite for full regression testing  -->
+	<!-- Executes ALL tests across all modules       -->
+	<!-- ============================================ -->
+	
+	<!-- Global Parameters -->
+	<parameter name="configurationFilesDirectory" value="./src/main/resources/config" />
+	<parameter name="pathForSavingLogs" value="./logs/regression" />
+	<parameter name="logName" value="REGRESSION_LOGS"/> 
+	<parameter name="baseUrl" value="https://www.saucedemo.com/" />
+	<parameter name="browser" value="chrome" />
+	<parameter name="implicitWait" value="10" />
+	<parameter name="explicitWait" value="10" />
+	<parameter name="captureScreenshot" value="true" />
+	<parameter name="screenshotPath" value="./screenshots/regression" />
+	
+	<!-- Test Data Reporting -->
+	<listeners>
+		<listener class-name="com.saucedemo.automation.utils.TestDataReportListener"/>
+	</listeners>
+
+	<!-- ============================================ -->
+	<!-- MODULE 1: LOGIN TESTS                        -->
+	<!-- ============================================ -->
+	
+	<test name="Regression_Login_AllScenarios"> 
+		<parameter name="testCode" value="./src/main/resources/testdata/LoginData.xlsx:TEST_CODE" />     
+		<parameter name="testData" value="./src/main/resources/testdata/LoginData.xlsx:LoginTests"/> 
+		<parameter name="testDataSets" value="ALL" /> 
+		<classes>
+			<class name="com.saucedemo.automation.tests.LoginTests">
+				<methods>					
+					<include name="testSuccessfulLogin" />
+					<include name="testLoginWithInvalidUsername" />
+					<include name="testLoginWithInvalidPassword" />
+					<include name="testLoginWithEmptyCredentials" />
+					<include name="testLoginWithLockedOutUser" />					
+				</methods>
+			</class>
+		</classes>   
+	</test>
+
+	<!-- ============================================ -->
+	<!-- MODULE 2: CART TESTS                         -->
+	<!-- ============================================ -->
+	
+	<test name="Regression_Cart_AllFunctionality"> 
+		<parameter name="testCode" value="./src/main/resources/testdata/CartData.xlsx:TEST_CODE" />     
+		<parameter name="testData" value="./src/main/resources/testdata/CartData.xlsx:CartTests"/> 
+		<parameter name="testDataSets" value="ALL" /> 
+		<classes>
+			<class name="com.saucedemo.automation.tests.CartTests"/>
+		</classes>   
+	</test>
+
+	<!-- ============================================ -->
+	<!-- MODULE 3: CHECKOUT TESTS                     -->
+	<!-- ============================================ -->
+	
+	<test name="Regression_Checkout_AllScenarios"> 
+		<parameter name="testCode" value="./src/main/resources/testdata/CheckoutData.xlsx:TEST_CODE" />     
+		<parameter name="testData" value="./src/main/resources/testdata/CheckoutData.xlsx:CheckoutTests"/> 
+		<parameter name="testDataSets" value="ALL" /> 
+		<classes>
+			<class name="com.saucedemo.automation.tests.CheckoutTests"/>
+		</classes>   
+	</test>
+
+	<!-- ============================================ -->
+	<!-- MODULE 4: END-TO-END TESTS                   -->
+	<!-- ============================================ -->
+	
+	<test name="Regression_E2E_CompleteFlows"> 
+		<parameter name="testCode" value="./src/main/resources/testdata/EndToEndData.xlsx:TEST_CODE" />     
+		<parameter name="testData" value="./src/main/resources/testdata/EndToEndData.xlsx:EndToEndTests"/> 
+		<parameter name="testDataSets" value="ALL" /> 
+		<classes>
+			<class name="com.saucedemo.automation.tests.EndToEndTests"/>
+		</classes>   
+	</test>
+
+</suite>
